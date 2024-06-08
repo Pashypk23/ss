@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Fusion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SmoothieS.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="pics/lgo.png" alt="Smoothie Fusion Logo" class="logo">
+            <h1>Welcome to Smoothie Fusion</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Fresh and Healthy Smoothies</h2>
+        <p>Your daily dose of deliciousness<br>Welcome to Smoothe Store, your ultimate destination for delicious and nutritious smoothies! We are dedicated to providing a wide variety of freshly made, high-quality smoothies crafted from the finest ingredients. <b>Whether you're looking for a refreshing boost, a nutritious snack, or a post-workout treat, our menu has something for everyone. Explore our range of flavors, discover new favorites, and enjoy the perfect blend of taste and health in every sip. Join us on a journey to wellness, one smoothie at a time!</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="pics/berry-blast.jpg" alt="Berry Blast Smoothie" class="smoothie-image">
+            <h3>Berry Blast</h3>
+            <p>A refreshing explosion of berries to brighten your day!</p>
+            <p>Ingredients: Blueberries, strawberries, and raspberries.</p>
+            <button onclick="orderSmoothie('Berry Blast')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="pics/tropical-paradise.jpg" alt="Tropical Paradise Smoothie" class="smoothie-image">
+            <h3>Tropical Paradise</h3>
+            <p>Escape to the tropics with this exotic blend of fruits.</p>
+            <p>Ingredients: Mango, pineapple, and coconut.</p>
+            <button onclick="orderSmoothie('Tropical Paradise')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="pics/green-detox.jpg" alt="Green Detox Smoothie" class="smoothie-image">
+            <h3>Green Detox</h3>
+            <p>Revitalize your body with this nutrient-packed green smoothie.</p>
+            <p>Ingredients: Spinach, kale, and green apple.</p>
+            <button onclick="orderSmoothie('Green Detox')">Order Now</button>
+        </div>
+		<div class="menu-item">
+            <img src="pics/ChocoNut.jpg" alt="ChocoNut Smoothie" class="smoothie-image">
+            <h3>Choco<br>Nut</h3>
+            <p>Savor the creamy delight of <br>a cocoa smoothie.</p>
+            <p>Ingredients: chocolate, tropical coconut, and nutty peanut butter.</p>
+            <button onclick="orderSmoothie('ChocoNut')">Order Now</button>
+		</div>
+		<div class="menu-item">
+            <img src="pics/pckale.jpg" alt="pckale Smoothie" class="smoothie-image">
+            <h3>PinaColada<br>KALE</h3>
+            <p>The goodness of kale meets the sunny sweetness of pineapple in every sip!".</p>
+            <p>Ingredients: pineapple, coconut and kale.</p>
+            <button onclick="orderSmoothie('pckale')">Order Now</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smoothie Fusion. All rights reserved.</p>
+    </footer>
+
+    <script src="SmoothieS.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="logo.png" alt="Smoothie Shop Logo" class="logo">
+        <h1>Smoothie Shop</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="circle light-blue"></div>
+    <div class="circle light-pink"></div>
+    <h2>Welcome to our Smoothie Shop!</h2>
+    <p>Explore our delicious smoothie menu below.</p>
+</section>
+
+<section id="menu">
+    <div class="menu-item">
+        <img src="smoothie1.jpg" alt="Smoothie 1">
+        <div>
+            <h3>Strawberry Banana Bliss</h3>
+            <p>A delightful blend of fresh strawberries and ripe bananas.</p>
+            <button onclick="orderSmoothie('Strawberry Banana Bliss')">Order Now</button>
+        </div>
+    </div>
+    <!-- Repeat the menu items structure for other smoothies -->
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Smoothie Shop. All rights reserved.</p>
+</footer>
+
+<script>
+  
+</script>
+
+</body>
+</html>
